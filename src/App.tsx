@@ -2,7 +2,7 @@ import AuthLayout from './_auth/AuthLayout';
 import SigninForm from './_auth/forms/SigninForm';
 import SignupForm from './_auth/forms/SignupForm';
 import RootLayout from './_root/RootLayout';
-import { AllUsers, CreatePost, Explore, Home, Saved, EditPost, PostDetails, Profile, UpdateProfile } from './_root/pages';
+import { AllUsers, CreatePost, Explore, Home, Saved, EditPost, Profile, UpdateProfile, PostDetails } from './_root/pages';
 import './globals.css';
 import { Routes, Route} from 'react-router-dom';
 import { Toaster } from "@/components/ui/toaster";
@@ -27,7 +27,7 @@ const App = () => {
           <Route path="/all-users" element={<AllUsers />}/>
           <Route path="/create-post" element={<CreatePost />}/>
           <Route path="/update-post/:id" element={<EditPost />}/>
-          <Route path="/posts/:id" element={<PostDetails />}/>
+          <Route path="/post/:id" element={<PostDetails />} />
           <Route path="/profile/:id/*" element={<Profile />}/>
           <Route path="/update-profile/:id" element={<UpdateProfile />}/>
 
